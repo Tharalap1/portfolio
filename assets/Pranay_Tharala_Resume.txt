@@ -1,0 +1,137 @@
+============================================================
+PRANAY THARALA — Senior AI / ML Engineer
+============================================================
+Email:    t.pranaytharala@gmail.com
+Phone:    (201) 268-9549
+LinkedIn: https://www.linkedin.com/in/pranay-t-35157035b
+Portfolio: https://Tharalap1.github.io/portfolio/
+
+------------------------------------------------------------
+PROFESSIONAL SUMMARY
+------------------------------------------------------------
+Senior AI/ML Engineer with 7+ years of software engineering
+experience and 3+ years building production LLM and machine
+learning systems. Deep hands-on expertise across the GenAI
+stack: LLM application development, RAG pipelines, agentic AI
+systems with tool use and orchestration, and LoRA/QLoRA
+fine-tuning. Shipped AI products in regulated financial services
+(American Express, Vanguard) with a high bar for reliability,
+evaluation, and responsible AI. Strong Python backend engineer
+(FastAPI, REST APIs, microservices) across AWS, GCP, and Azure,
+with MLOps/LLMOps practices covering the full model lifecycle.
+
+------------------------------------------------------------
+TECHNICAL SKILLS
+------------------------------------------------------------
+AI / GenAI:        LLM application development, RAG pipelines,
+                  AI agents & orchestration, tool calling, prompt
+                  engineering, LoRA/QLoRA fine-tuning, LLM
+                  evaluation (TruLens, LLM-as-a-judge),
+                  latency/cost/accuracy benchmarking, NLP
+                  (entity extraction, classification,
+                  summarization), conversational AI, voice AI
+Frameworks:       LangChain, LangSmith, Hugging Face
+                  Transformers, PyTorch, TensorFlow, Keras, JAX,
+                  scikit-learn, XGBoost, spaCy, NLTK, BERT
+Models/Platforms: Llama 3, Mistral, OpenAI API, AWS Bedrock,
+                  GCP Vertex AI, Azure AI
+Data/Vector:      Pinecone, FAISS, OpenSearch, pgvector, SQL,
+                  BigQuery, Airflow, data pipelines
+Big Data:         Databricks, Apache Spark, Spark MLlib
+Computer Vision:  OpenCV, image/video analytics, OCR, object
+                  detection
+Distributed:      CUDA, Ray, distributed training
+BI/Viz:           Tableau, Power BI
+Backend:          Python, Java, R, FastAPI, Spring Boot, REST
+                  APIs, microservices
+MLOps/DevOps:     MLflow, Kubeflow, Docker, Kubernetes,
+                  Terraform, Jenkins, GitLab CI, CI/CD,
+                  experiment tracking, automated retraining
+Cloud:            AWS (SageMaker, EC2, S3, RDS, Lambda), GCP,
+                  Azure
+Quality:          responsible-AI reviews, bias-mitigation
+                  controls, model-evaluation criteria, Grafana,
+                  Splunk
+
+------------------------------------------------------------
+WORK EXPERIENCE
+------------------------------------------------------------
+
+American Express — Senior AI Engineer
+Mar 2026 - Present
+- Design, develop, and deploy production GenAI applications
+  (RAG pipelines, multi-agent systems, LLM-powered APIs) for
+  fraud detection and document intelligence.
+- Build agentic AI systems (LangChain) with tool use,
+  vector-database retrieval (Pinecone, FAISS), and event-driven
+  orchestration that triage fraud alerts end to end.
+- Develop LoRA/QLoRA fine-tuning strategies (Llama 3, Mistral)
+  and prompt-engineering practices that reduce hallucinations in
+  compliance-heavy workflows.
+- Evaluate LLM systems with TruLens and LLM-as-a-judge; run
+  systematic latency/cost/accuracy benchmarking across OpenAI
+  API, AWS Bedrock, and GCP Vertex AI.
+- Apply XGBoost/gradient-boosting models with rule-based logic
+  to automate anomaly detection, reducing false positives and
+  manual investigation effort.
+- Lead responsible-AI reviews, model-evaluation criteria, and
+  bias-mitigation controls; mentor engineers on shipping LLM
+  features safely.
+
+Vanguard — AI/ML Engineer
+Sep 2023 - Mar 2026
+- Architected and deployed RAG pipelines (LangChain, Pinecone,
+  FAISS, Vertex AI) over fund/account documentation, delivering
+  cited, context-aware answers via APIs.
+- Built LLM-powered agents and event-driven APIs (Java, Spring
+  Boot, AWS Lambda) bridging AI platforms with enterprise data
+  systems.
+- Designed LoRA/QLoRA fine-tuning strategies for Llama and
+  Mistral on domain datasets; integrated multiple LLM APIs
+  behind a common interface with systematic benchmarking.
+- Implemented MLOps/LLMOps (MLflow, Airflow) for experiment
+  tracking, versioning, and automated retraining; built
+  BERT/spaCy NLP pipelines for entity extraction and
+  classification.
+- Developed XGBoost models for risk scoring and prediction.
+
+HCLTech — Software Engineer
+Jul 2020 - Jul 2023
+- Designed and maintained backend services and RESTful APIs
+  using Java and Spring Boot for global client applications.
+- Deployed cloud infrastructure on AWS (EC2, S3, RDS, Lambda)
+  and Azure, automating provisioning with Terraform.
+- Built CI/CD pipelines (Jenkins, GitLab CI, Docker,
+  Kubernetes), shortening release cycles and cutting manual
+  deployment effort by over 30%.
+- Wrote and optimized SQL across Oracle, PostgreSQL, and MySQL;
+  implemented monitoring with Grafana and Splunk.
+
+HCLTech — Technology Trainee (TechBee Apprenticeship)
+Jul 2019 - Jul 2020
+- Work-integrated apprenticeship covering Java, Python, data
+  structures, RDBMS/SQL, and SDLC; converted to full-time
+  Software Engineer.
+
+------------------------------------------------------------
+PROJECTS
+------------------------------------------------------------
+Fraud-Detection Virtual Assistant:
+  Agentic AI assistant with vector-database retrieval triaging
+  fraud alerts end to end, cutting analyst investigation time.
+
+Enterprise Document-Intelligence RAG Assistant:
+  Retrieval-augmented Q&A over fund/account documents
+  (LangChain, Pinecone, FAISS, Vertex AI) with cited answers
+  for compliance teams.
+
+Fine-Tuned Financial-Domain LLM:
+  LoRA/QLoRA fine-tuning of Llama and Mistral on
+  compliance/transaction datasets, reducing hallucinations and
+  improving domain accuracy.
+
+------------------------------------------------------------
+EDUCATION
+------------------------------------------------------------
+- Master's Degree, Information Technology — St. Francis College
+- Bachelor of Computer Applications (BCA) — SASTRA University

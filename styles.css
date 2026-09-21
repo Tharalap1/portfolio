@@ -301,3 +301,74 @@ footer::before {
   .bg-glow { animation: none; }
   .btn:hover, .card:hover, .chips span:hover { transform: none; }
 }
+
+/* ---------- dynamic: floating orbs ---------- */
+.hero { position: relative; }
+.orbs { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.hero-inner, .hero .stats { position: relative; z-index: 1; }
+.orb { position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.5; }
+.orb-1 { width: 340px; height: 340px; top: -80px; right: 6%; background: radial-gradient(circle, #8b5cf6, transparent 70%); animation: orb-float-1 14s ease-in-out infinite alternate; }
+.orb-2 { width: 280px; height: 280px; bottom: -60px; left: 2%; background: radial-gradient(circle, #22d3ee, transparent 70%); animation: orb-float-2 18s ease-in-out infinite alternate; }
+.orb-3 { width: 220px; height: 220px; top: 30%; left: 40%; background: radial-gradient(circle, #f472b6, transparent 70%); animation: orb-float-1 20s ease-in-out infinite alternate-reverse; }
+@keyframes orb-float-1 { from { transform: translate(0, 0) scale(1); } to { transform: translate(-60px, 50px) scale(1.15); } }
+@keyframes orb-float-2 { from { transform: translate(0, 0) scale(1.1); } to { transform: translate(70px, -40px) scale(0.95); } }
+
+/* ---------- dynamic: animated gradient headline ---------- */
+.hero h1 {
+  background-size: 220% auto;
+  animation: headline-shift 8s ease-in-out infinite alternate;
+}
+@keyframes headline-shift {
+  from { background-position: 0% center; }
+  to { background-position: 100% center; }
+}
+
+/* ---------- dynamic: typing line ---------- */
+.typed-line {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1rem; color: var(--cyan); margin-bottom: 1.4rem; min-height: 1.6em;
+}
+.typed-prompt { color: var(--fuchsia); font-weight: 700; margin-right: 0.3rem; }
+.caret {
+  display: inline-block; width: 9px; height: 1.15em; margin-left: 2px; vertical-align: -0.2em;
+  background: var(--cyan); animation: caret-blink 0.9s steps(1) infinite;
+}
+@keyframes caret-blink { 50% { opacity: 0; } }
+
+/* ---------- dynamic: skills marquee ---------- */
+.marquee {
+  overflow: hidden; white-space: nowrap;
+  border-top: 1px solid rgba(139, 92, 246, 0.25);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.25);
+  background: rgba(139, 92, 246, 0.05);
+  padding: 0.85rem 0; margin-top: 2.5rem;
+}
+.marquee-track { display: inline-flex; gap: 0; animation: marquee-scroll 28s linear infinite; }
+.marquee-track span {
+  font-size: 0.85rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted); padding: 0 1.4rem; position: relative;
+}
+.marquee-track span::after {
+  content: "✦"; position: absolute; right: -0.35rem; color: var(--fuchsia); font-size: 0.7rem; top: 0.1rem;
+}
+.marquee-track span:nth-child(3n+1) { color: var(--cyan); }
+.marquee-track span:nth-child(3n+2) { color: var(--fuchsia); }
+@keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+/* ---------- dynamic: scroll reveal ---------- */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ---------- dynamic: hero entrance ---------- */
+.hero-inner { animation: hero-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero .stats { animation: hero-rise 0.9s 0.25s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes hero-rise { from { opacity: 0; transform: translateY(36px); } to { opacity: 1; transform: none; } }
+
+/* ---------- dynamic: 3D tilt on cards ---------- */
+.card { transition: transform 0.25s ease, box-shadow 0.25s ease; will-change: transform; }
+
+@media (prefers-reduced-motion: reduce) {
+  .orb, .hero h1, .marquee-track, .caret, .hero-inner, .hero .stats { animation: none !important; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}

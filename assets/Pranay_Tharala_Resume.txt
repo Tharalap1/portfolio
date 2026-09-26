@@ -1,137 +1,346 @@
 ============================================================
-PRANAY THARALA — Senior AI / ML Engineer
+PRANAY THARALA
+Artificial Intelligence & Machine Learning Engineer
 ============================================================
-Email:    t.pranaytharala@gmail.com
-Phone:    (201) 268-9549
-LinkedIn: https://www.linkedin.com/in/pranay-t-35157035b
-Portfolio: https://Tharalap1.github.io/portfolio/
+United States | t.pranaytharala@gmail.com | (201) 268-9549
+linkedin.com/in/pranay-t-35157035b
 
 ------------------------------------------------------------
 PROFESSIONAL SUMMARY
 ------------------------------------------------------------
-Senior AI/ML Engineer with 7+ years of software engineering
-experience and 3+ years building production LLM and machine
-learning systems. Deep hands-on expertise across the GenAI
-stack: LLM application development, RAG pipelines, agentic AI
-systems with tool use and orchestration, and LoRA/QLoRA
-fine-tuning. Shipped AI products in regulated financial services
-(American Express, Vanguard) with a high bar for reliability,
-evaluation, and responsible AI. Strong Python backend engineer
-(FastAPI, REST APIs, microservices) across AWS, GCP, and Azure,
-with MLOps/LLMOps practices covering the full model lifecycle.
+AI/ML Engineer with 7+ years of experience building and
+deploying production machine learning and generative AI
+systems across financial services, driving measurable gains
+in accuracy, automation, and regulatory compliance.
+
+Expert in LLM fine-tuning (LoRA/QLoRA on Llama, Mistral) and
+Retrieval-Augmented Generation (RAG) pipelines using
+LangChain, Pinecone, FAISS, OpenSearch, and pgvector,
+delivering context-aware, cited answers over enterprise fund,
+account, and transaction documents.
+
+Proficient in Python, Java, JavaScript, AWS (SageMaker,
+Bedrock, Lambda), GCP Vertex AI, and Azure AI, applying
+MLOps/LLMOps practices (MLflow, Kubeflow, Airflow, DVC) for
+end-to-end model deployment, monitoring, and retraining.
+
+Built and deployed ML models (XGBoost, Random Forest,
+Gradient Boosting) and NLP pipelines (BERT, spaCy, Hugging
+Face Transformers) for fraud detection, risk scoring, and
+document intelligence, reducing false positives and manual
+review time.
+
+Hands-on experience with optical character recognition (OCR)
+and document-intelligence solutions that extract and process
+data from documents, forms, images, and PDFs, and with
+AI-driven decision-support tools for high-risk transaction
+reviews and customer risk assessment.
+
+Engineered cloud-native APIs and microservices (Java, Spring
+Boot, AWS Lambda) bridging AI platforms with enterprise data
+systems, supporting responsible-AI reviews and
+SEC/FINRA-adjacent regulatory requirements.
+
+Effective communicator and mentor, partnering with engineers,
+product managers, and business stakeholders to translate
+requirements into production-grade AI solutions, and guiding
+junior engineers on AI architecture and CI/CD best practices.
 
 ------------------------------------------------------------
 TECHNICAL SKILLS
 ------------------------------------------------------------
-AI / GenAI:        LLM application development, RAG pipelines,
-                  AI agents & orchestration, tool calling, prompt
-                  engineering, LoRA/QLoRA fine-tuning, LLM
-                  evaluation (TruLens, LLM-as-a-judge),
-                  latency/cost/accuracy benchmarking, NLP
-                  (entity extraction, classification,
-                  summarization), conversational AI, voice AI
-Frameworks:       LangChain, LangSmith, Hugging Face
-                  Transformers, PyTorch, TensorFlow, Keras, JAX,
-                  scikit-learn, XGBoost, spaCy, NLTK, BERT
-Models/Platforms: Llama 3, Mistral, OpenAI API, AWS Bedrock,
-                  GCP Vertex AI, Azure AI
-Data/Vector:      Pinecone, FAISS, OpenSearch, pgvector, SQL,
-                  BigQuery, Airflow, data pipelines
-Big Data:         Databricks, Apache Spark, Spark MLlib
-Computer Vision:  OpenCV, image/video analytics, OCR, object
-                  detection
-Distributed:      CUDA, Ray, distributed training
-BI/Viz:           Tableau, Power BI
-Backend:          Python, Java, R, FastAPI, Spring Boot, REST
-                  APIs, microservices
-MLOps/DevOps:     MLflow, Kubeflow, Docker, Kubernetes,
-                  Terraform, Jenkins, GitLab CI, CI/CD,
-                  experiment tracking, automated retraining
-Cloud:            AWS (SageMaker, EC2, S3, RDS, Lambda), GCP,
-                  Azure
-Quality:          responsible-AI reviews, bias-mitigation
-                  controls, model-evaluation criteria, Grafana,
-                  Splunk
+Programming Languages:
+  Python, SQL, Java, JavaScript, R, Linux
+
+Frameworks & Libraries:
+  Spring Boot, Angular, TensorFlow, PyTorch, scikit-learn,
+  Hugging Face, XGBoost, LangChain, LangSmith, FastAPI,
+  Flask, BERTopic, RetinaNet, Faster R-CNN, BERT,
+  Transformers
+
+Databases & NLP:
+  SQL, NoSQL, Oracle, PostgreSQL, MySQL, MongoDB, Cassandra,
+  BigQuery, Vector Databases (Pinecone, FAISS, OpenSearch,
+  pgvector, Chroma), Graph Databases (Neo4j), Natural
+  Language Processing (NLP), Agentic AI Frameworks
+
+Machine Learning:
+  Supervised & Unsupervised Learning, Regression,
+  Classification, Clustering (K-Means, Hierarchical),
+  Decision Trees, Random Forest, Gradient Boosting
+  (XGBoost, LightGBM), SVM, KNN, Naive Bayes, Ensemble
+  Methods, Feature Engineering, Hyperparameter Tuning,
+  Cross-Validation, Regularization (L1, L2), Dimensionality
+  Reduction (PCA, t-SNE), Time Series Forecasting (ARIMA,
+  SARIMA, Prophet, LSTM), Model Interpretability (SHAP,
+  LIME), Recommendation Systems
+
+Deep Learning:
+  ANN, CNN, RNN, LSTM, Bi-LSTM, GRU, Autoencoders,
+  Transfer Learning (VGG, ResNet, InceptionNet), Attention
+  Mechanism, Object Detection (YOLO, Faster R-CNN,
+  RetinaNet), Image Segmentation (U-Net, Mask R-CNN), OCR,
+  Optimization Algorithms (SGD, Adam, RMSprop),
+  Model Deployment
+
+NLP Techniques:
+  Tokenization, Lemmatization, Stemming, TF-IDF, Word
+  Embeddings (Word2Vec, GloVe, FastText), Seq2Seq Models,
+  Transformer Models (BERT, GPT, T5), NER, Sentiment
+  Analysis, Text Classification, Text Summarization,
+  Question Answering, Topic Modeling (LDA), spaCy, NLTK
+
+Generative AI:
+  LLMs, Ollama, Gemini (familiar), LangChain, LangSmith,
+  MCP, Agentic AI, Fine-Tuning (LoRA, QLoRA), Local LLMs
+  (Mistral, Llama, Gemma), Inference APIs (Groq,
+  Nvidia NIM), Retrieval-Augmented Generation (RAG), Prompt
+  Engineering, Prompt Templates, Document Chunking &
+  Indexing, GANs, Diffusion Models, Text-to-Image
+  Generation (DALL-E, CLIP)
+
+MLOps & LLMOps:
+  CI/CD for ML, Model Deployment (REST API, Batch), Model
+  Monitoring, Model Versioning, Retraining Pipelines,
+  Experiment Tracking (MLflow, Weights & Biases), Data
+  Versioning (DVC), Feature Stores (Feast), Kubeflow,
+  LLM Response Evaluation (TruLens, PromptLayer), Scalable
+  LLM Deployment (TGI, vLLM)
+
+Big Data:
+  Hadoop, Hive, HBase, Apache Spark, PySpark, Kafka,
+  Pub/Sub, Apache Beam, Sqoop
+
+Tools & Software:
+  Excel, Tableau, Power BI, Pandas, NumPy, Docker,
+  Kubernetes, Terraform, Git, Jenkins, GitLab CI, GitHub
+  Actions, Cloud Build, Grafana, Splunk, Prometheus,
+  MLflow, Airflow, Agile, VS Code, Jupyter Notebook,
+  Google Colab, Postman
+
+Cloud Platforms:
+  AWS (SageMaker, Bedrock, EC2, S3, RDS, Lambda,
+  CloudFormation), GCP (Vertex AI, BigQuery, Dataflow,
+  Cloud Run), Azure (Functions, Azure AI, Azure ML,
+  Azure OpenAI)
+
+Soft Skills:
+  Requirements gathering, Cross-functional collaboration,
+  Mentoring, Stakeholder communication, Business reporting
 
 ------------------------------------------------------------
 WORK EXPERIENCE
 ------------------------------------------------------------
 
-American Express — Senior AI Engineer
-Mar 2026 - Present
-- Design, develop, and deploy production GenAI applications
-  (RAG pipelines, multi-agent systems, LLM-powered APIs) for
-  fraud detection and document intelligence.
-- Build agentic AI systems (LangChain) with tool use,
-  vector-database retrieval (Pinecone, FAISS), and event-driven
-  orchestration that triage fraud alerts end to end.
-- Develop LoRA/QLoRA fine-tuning strategies (Llama 3, Mistral)
-  and prompt-engineering practices that reduce hallucinations in
-  compliance-heavy workflows.
-- Evaluate LLM systems with TruLens and LLM-as-a-judge; run
-  systematic latency/cost/accuracy benchmarking across OpenAI
-  API, AWS Bedrock, and GCP Vertex AI.
-- Apply XGBoost/gradient-boosting models with rule-based logic
-  to automate anomaly detection, reducing false positives and
-  manual investigation effort.
-- Lead responsible-AI reviews, model-evaluation criteria, and
-  bias-mitigation controls; mentor engineers on shipping LLM
-  features safely.
+American Express | Mar 2026 - Present
+Senior AI Engineer
+- Ramped up on American Express's enterprise AI platform,
+  internal LLM tooling, data-governance standards, and
+  prompt-engineering guidelines within the first weeks,
+  accelerating readiness to build and deploy ML and
+  generative AI solutions for financial-services use cases.
+- Partner with engineers and product managers to scope and
+  deliver production-grade RAG and agentic AI
+  virtual-assistant initiatives, supporting fraud-detection
+  and document-intelligence workstreams through end-to-end
+  model deployment.
+- Design and integrate LLM-powered agents and event-driven
+  APIs into enterprise applications, leveraging LangChain
+  and vector databases (Pinecone, FAISS) to power
+  retrieval-augmented NLP and agentic workflows.
+- Build AI-driven decision-support tools that analyze
+  high-risk transactions and assist analysts with
+  fraud-review and customer risk-assessment decisions.
+- Evaluate and benchmark LLM providers and vector-database
+  options for upcoming production pipelines by running
+  systematic latency, cost, and accuracy trade-off
+  experiments, informing platform-wide build vs. buy
+  decisions.
+- Support responsible-AI reviews and observability
+  checkpoints by documenting model-evaluation criteria and
+  bias-mitigation controls throughout training and
+  deployment cycles, strengthening audit readiness.
+- Apply machine learning models (XGBoost, Gradient
+  Boosting) alongside rule-based logic to automate anomaly
+  detection in fraud workflows, reducing false positives
+  and manual investigation effort.
+- Apply NLP techniques (BERT, Hugging Face Transformers,
+  Named Entity Recognition) and optical character
+  recognition (OCR) to document-intelligence workflows,
+  extracting and classifying entities across compliance
+  and customer documents to speed review cycles.
+- Use Claude daily to build, evaluate, and operate
+  production agentic AI systems and RAG pipelines,
+  accelerating delivery of AI features.
+Environment: AWS, GCP Vertex AI, LangChain, Pinecone,
+FAISS, LLM Agents, Claude, Prompt Engineering, RAG,
+XGBoost, BERT, Hugging Face, NLP, Python, Financial
+Services
 
-Vanguard — AI/ML Engineer
-Sep 2023 - Mar 2026
-- Architected and deployed RAG pipelines (LangChain, Pinecone,
-  FAISS, Vertex AI) over fund/account documentation, delivering
-  cited, context-aware answers via APIs.
-- Built LLM-powered agents and event-driven APIs (Java, Spring
-  Boot, AWS Lambda) bridging AI platforms with enterprise data
+Vanguard | Sep 2023 - Mar 2026
+AI/ML Engineer
+- Architected and deployed AI engineering pipelines that
+  generated 2-page automated summaries of unstructured fund
+  disclosures, account statements, and investment-operations
+  documents by integrating AWS Lambda, Terraform, and REST
+  APIs, cutting manual document-review effort for
+  operations teams.
+- Designed prompt-engineering strategies - including hybrid
+  prompting techniques - and fine-tuning (LoRA/QLoRA on
+  Llama, Mistral) for domain-specific generative AI
+  solutions, reducing hallucinations and improving
+  compliance accuracy across investment and brokerage
+  workflows.
+- Led and mentored a cross-functional team on an AI/ML
+  modernization roadmap, translating legacy fund- and
+  account-administration challenges into scalable AI
+  solutions adopted across the platform.
+- Deployed RAG pipelines (LangChain, Pinecone, FAISS,
+  Vertex AI) over legacy fund and account documentation,
+  evaluating OpenSearch and pgvector as retrieval options,
+  enabling modern API-first access to historical records.
+- Engineered cloud-native APIs and microservices (Java,
+  Spring Boot, AWS Lambda) and event-driven integrations
+  bridging AI platforms with enterprise data systems,
+  improving cross-system interoperability.
+- Evaluated and selected LLM providers (OpenAI API, AWS
+  Bedrock, GCP Vertex AI) for production use by weighing
+  latency, cost, and accuracy against legacy system
+  constraints through systematic experimentation.
+- Contributed to responsible-AI reviews, model evaluation,
+  and bias-mitigation checkpoints, ensuring AI solutions
+  met financial-services and SEC/FINRA-adjacent regulatory
+  requirements during training and deployment.
+- Developed and deployed ML models (XGBoost, Random
+  Forest, Gradient Boosting) for customer risk assessment,
+  risk scoring, and anomaly detection, improving
+  early-detection accuracy and reducing false positives in
+  transaction and account activity.
+- Built NLP pipelines (BERT, spaCy, Hugging Face
+  Transformers) to extract entities and classify
+  unstructured investment and account documents, improving
+  processing accuracy and reducing manual review time.
+- Implemented time-series forecasting models (ARIMA,
+  Prophet) for portfolio and operational metrics, improving
+  prediction accuracy by up to 25%.
+- Applied MLOps practices (MLflow, Airflow) for experiment
+  tracking, model versioning, and automated retraining
+  pipelines, ensuring reliable, production-grade ML
   systems.
-- Designed LoRA/QLoRA fine-tuning strategies for Llama and
-  Mistral on domain datasets; integrated multiple LLM APIs
-  behind a common interface with systematic benchmarking.
-- Implemented MLOps/LLMOps (MLflow, Airflow) for experiment
-  tracking, versioning, and automated retraining; built
-  BERT/spaCy NLP pipelines for entity extraction and
-  classification.
-- Developed XGBoost models for risk scoring and prediction.
+- Mentored junior engineers on AI architecture,
+  prompt-engineering best practices, and CI/CD deployment
+  patterns for production machine learning systems.
+Environment: AWS (Lambda, Bedrock), GCP Vertex AI,
+LangChain, Pinecone, FAISS, OpenSearch, pgvector,
+Terraform, Java, Spring Boot, LoRA/QLoRA, Llama, Mistral,
+OpenAI API, XGBoost, BERT, spaCy, Hugging Face, ARIMA,
+Prophet, MLflow, Airflow
 
-HCLTech — Software Engineer
-Jul 2020 - Jul 2023
-- Designed and maintained backend services and RESTful APIs
-  using Java and Spring Boot for global client applications.
-- Deployed cloud infrastructure on AWS (EC2, S3, RDS, Lambda)
-  and Azure, automating provisioning with Terraform.
-- Built CI/CD pipelines (Jenkins, GitLab CI, Docker,
-  Kubernetes), shortening release cycles and cutting manual
-  deployment effort by over 30%.
-- Wrote and optimized SQL across Oracle, PostgreSQL, and MySQL;
-  implemented monitoring with Grafana and Splunk.
+HCLTech | Jul 2020 - Jul 2023
+Software Engineer
+- Promoted to full-time Software Engineer after completing
+  the HCL TechBee apprenticeship, taking ownership of
+  feature development, testing, and deployment for global
+  client applications.
+- Designed, developed, and maintained backend services and
+  RESTful APIs using Java and Spring Boot, following
+  object-oriented design principles and enterprise coding
+  standards.
+- Built reusable, responsive front-end UI components using
+  Angular (RxJS, Reactive Forms) and JavaScript, and
+  integrated them with secure backend microservices,
+  improving application performance and consistency across
+  client-facing portals.
+- Deployed and supported cloud infrastructure on AWS (EC2,
+  S3, RDS, Lambda) and Microsoft Azure, automating
+  infrastructure provisioning with Terraform for
+  consistent, repeatable deployments.
+- Wrote and maintained unit and integration test suites
+  (JUnit, Mockito), improving code coverage and reducing
+  regression defects across release cycles.
+- Participated in Agile/Scrum ceremonies with distributed,
+  cross-functional teams to deliver features on schedule.
+- Performed peer code reviews and enforced version-control
+  best practices (Git, branching strategies, pull
+  requests) to maintain code quality across the team.
+- Built and maintained CI/CD pipelines (Jenkins, GitLab
+  CI, Docker, Kubernetes) to automate build, test, and
+  deployment steps, shortening release cycles, enabling
+  zero-downtime rollouts, and cutting manual deployment
+  effort by over 30%.
+- Wrote and optimized SQL queries across Oracle,
+  PostgreSQL, and MySQL, applying indexing and caching
+  strategies to reduce latency, and supported schema
+  changes and data migrations for relational databases.
+- Provided L2/L3 production support, triaging incidents,
+  performing root-cause analysis, and coordinating fixes
+  to meet SLA commitments and minimize downtime.
+- Implemented monitoring and observability practices using
+  Grafana and Splunk to track application health,
+  accelerate incident detection, and improve production
+  stability.
+- Interfaced directly with client stakeholders to gather
+  requirements, clarify specifications, and communicate
+  technical trade-offs and delivery timelines.
+- Authored technical documentation (design notes, runbooks,
+  release notes) to support knowledge transfer and
+  long-term maintainability.
+Environment: Java, Spring Boot, Angular, JavaScript, AWS,
+Azure, Terraform, JUnit, Mockito, Git, Jenkins, GitLab CI,
+Docker, Kubernetes, Oracle, PostgreSQL, MySQL, Grafana,
+Splunk, SQL, Agile/Scrum, REST APIs
 
-HCLTech — Technology Trainee (TechBee Apprenticeship)
-Jul 2019 - Jul 2020
-- Work-integrated apprenticeship covering Java, Python, data
-  structures, RDBMS/SQL, and SDLC; converted to full-time
-  Software Engineer.
+HCLTech | Jul 2019 - Jul 2020
+Technology Trainee - HCL TechBee (Apprenticeship)
+- Selected from a highly competitive nationwide applicant
+  pool for a 12-month work-integrated apprenticeship
+  combining structured technical training with on-the-job
+  experience.
+- Completed a structured curriculum covering programming
+  fundamentals (Java, Python), data structures and
+  algorithms, object-oriented programming, RDBMS/SQL, and
+  the software development lifecycle (SDLC).
+- Built and presented mini-projects applying classroom
+  concepts to practical coding exercises, reinforcing
+  fundamentals in debugging, testing, and code
+  readability.
+- Rotated onto live client engagements under senior
+  engineer supervision, gaining hands-on exposure to
+  enterprise version control (Git), issue tracking (JIRA),
+  and production deployment workflows.
+- Practiced technical communication, ticket documentation,
+  and collaborative problem-solving within an Agile team
+  environment.
+- Completed periodic technical assessments and a capstone
+  evaluation, earning conversion to a full-time Software
+  Engineer role.
+Environment: Java, Python, SQL, Git, JIRA, Agile, SDLC
 
 ------------------------------------------------------------
 PROJECTS
 ------------------------------------------------------------
-Fraud-Detection Virtual Assistant:
-  Agentic AI assistant with vector-database retrieval triaging
-  fraud alerts end to end, cutting analyst investigation time.
-
 Enterprise Document-Intelligence RAG Assistant:
-  Retrieval-augmented Q&A over fund/account documents
-  (LangChain, Pinecone, FAISS, Vertex AI) with cited answers
-  for compliance teams.
+  Built a retrieval-augmented Q&A assistant using NLP over
+  fund and account documents (LangChain, Pinecone, FAISS,
+  GCP Vertex AI), surfacing cited, context-aware answers
+  that cut lookup time for compliance and support teams.
 
 Fine-Tuned Financial-Domain LLM:
-  LoRA/QLoRA fine-tuning of Llama and Mistral on
-  compliance/transaction datasets, reducing hallucinations and
-  improving domain accuracy.
+  Applied LoRA/QLoRA fine-tuning to open-source LLMs
+  (Llama, Mistral) through iterative training on
+  compliance and transaction datasets, reducing
+  hallucinated responses and improving domain accuracy.
+
+Fraud-Detection Virtual Assistant:
+  Designed an AI-powered decision-support virtual assistant
+  integrated with vector databases to triage high-risk
+  fraud alerts, cutting manual investigation time for
+  analyst teams.
 
 ------------------------------------------------------------
 EDUCATION
 ------------------------------------------------------------
-- Master's Degree, Information Technology — St. Francis College
-- Bachelor of Computer Applications (BCA) — SASTRA University
+- Master's Degree, Information Technology
+  St. Francis College
+- Bachelor of Computer Applications (BCA)
+  SASTRA University

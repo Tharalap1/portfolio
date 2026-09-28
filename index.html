@@ -39,15 +39,14 @@
       <a href="#experience">Experience</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
+      <button class="cmdk-hint" id="cmdkHint" type="button" aria-label="Open command palette (Ctrl or Cmd K)" title="Command palette (Ctrl/Cmd+K)">⌘K</button>
       <a class="btn btn-small" href="assets/Pranay_Tharala_Resume.pdf" download>Download Resume</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero" id="top">
-    <div class="orbs" aria-hidden="true">
-      <span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span>
-    </div>
+    <canvas id="netCanvas" aria-hidden="true"></canvas>
     <div class="hero-inner">
       <div class="hero-photo">
         <img src="assets/profile.jpg" alt="Pranay Tharala">
@@ -87,6 +86,19 @@
       <div class="stat glass">
         <span class="stat-num" data-target="25" data-suffix="%">0</span>
         <span class="stat-label">Forecasting accuracy lift from time-series models</span>
+      </div>
+    </div>
+
+    <!-- INTERACTIVE TERMINAL -->
+    <div class="glass terminal-card" id="terminalCard">
+      <div class="term-bar" aria-hidden="true">
+        <span class="term-dot term-r"></span><span class="term-dot term-y"></span><span class="term-dot term-g"></span>
+        <span class="term-title">pranay@portfolio: ~</span>
+      </div>
+      <div class="term-body" id="termBody" role="log" aria-label="Interactive terminal" tabindex="0"></div>
+      <div class="term-input-row">
+        <span class="term-prompt" aria-hidden="true">pranay@portfolio:~$</span>
+        <input id="termInput" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Terminal command input" placeholder="type 'help' and hit enter">
       </div>
     </div>
   </header>
@@ -545,6 +557,40 @@
   <footer>
     <p>© <span id="year"></span> Pranay Tharala · Artificial Intelligence &amp; Machine Learning Engineer</p>
   </footer>
+
+  <!-- AI ASSISTANT -->
+  <button id="chatFab" class="chat-fab" type="button" aria-label="Ask Pranay's AI" aria-expanded="false">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </button>
+  <div id="chatPanel" class="chat-panel" role="dialog" aria-label="Ask Pranay's AI" hidden>
+    <div class="chat-head">
+      <div>
+        <p class="chat-title">Ask Pranay's AI</p>
+        <p class="chat-sub">Answers from his real experience — no hallucinations</p>
+      </div>
+      <button id="chatClose" class="chat-close" type="button" aria-label="Close chat">&times;</button>
+    </div>
+    <div id="chatMsgs" class="chat-msgs" role="log" aria-live="polite"></div>
+    <div class="chat-chips" id="chatChips">
+      <button type="button" data-q="What are his top skills?">Top skills</button>
+      <button type="button" data-q="Is he open to work?">Open to work?</button>
+      <button type="button" data-q="Show me his projects">Projects</button>
+      <button type="button" data-q="How do I contact him?">Contact</button>
+    </div>
+    <div class="chat-input-row">
+      <input id="chatInput" type="text" maxlength="200" placeholder="Ask about Pranay&hellip;" aria-label="Ask about Pranay" autocomplete="off">
+      <button id="chatSend" class="btn btn-small" type="button">Send</button>
+    </div>
+  </div>
+
+  <!-- COMMAND PALETTE -->
+  <div id="cmdk" class="cmdk" hidden>
+    <div class="cmdk-box" role="dialog" aria-modal="true" aria-label="Command palette">
+      <input id="cmdkInput" type="text" placeholder="Type a command or search&hellip;" aria-label="Command palette search" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <ul id="cmdkList" class="cmdk-list" role="listbox" aria-label="Commands"></ul>
+      <p class="cmdk-foot"><kbd>&uarr;&darr;</kbd> navigate &nbsp;&middot;&nbsp; <kbd>&crarr;</kbd> run &nbsp;&middot;&nbsp; <kbd>esc</kbd> close</p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

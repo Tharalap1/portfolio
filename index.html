@@ -5,7 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pranay Tharala | Artificial Intelligence &amp; Machine Learning Engineer</title>
   <meta name="description" content="Pranay Tharala — AI/ML Engineer with 7+ years building production machine learning and generative AI systems in regulated financial services: RAG pipelines, agentic AI, LoRA/QLoRA fine-tuning, OCR and document intelligence.">
+  <meta property="og:title" content="Pranay Tharala | AI/ML Engineer">
+  <meta property="og:description" content="Senior AI/ML Engineer building production RAG, agentic AI, and fine-tuned LLM systems in regulated financial services. Try the interactive RAG demo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tharalap1.github.io/portfolio/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='.5' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%23e879f9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='800' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pranay Tharala",
+    "jobTitle": "Senior AI/ML Engineer",
+    "url": "https://tharalap1.github.io/portfolio/",
+    "sameAs": [
+      "https://www.linkedin.com/in/pranay-t-35157035b",
+      "https://github.com/Tharalap1"
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="bg-glow"></div>
@@ -15,12 +33,13 @@
     <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
     <div class="nav-links" id="navLinks">
       <a href="#about">About</a>
+      <a href="#demo">Demo</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
-      <a class="btn btn-small" href="assets/Pranay_Tharala_Resume.txt" download>Download Resume</a>
+      <a class="btn btn-small" href="assets/Pranay_Tharala_Resume.pdf" download>Download Resume</a>
     </div>
   </nav>
 
@@ -34,6 +53,7 @@
         <img src="assets/profile.jpg" alt="Pranay Tharala">
       </div>
       <div class="hero-text">
+        <p class="avail"><span class="pulse" aria-hidden="true"></span>Currently: open to Senior AI Engineer / AI-ML roles</p>
         <p class="hero-role">Artificial Intelligence &amp; Machine Learning Engineer</p>
         <h1>Building production AI that earns trust in regulated industries.</h1>
         <p class="typed-line"><span class="typed-prompt">&gt;_</span> <span id="typed"></span><span class="caret"></span></p>
@@ -47,6 +67,7 @@
         <div class="hero-ctas">
           <a class="btn" href="#projects">View Projects</a>
           <a class="btn btn-ghost" href="assets/Pranay_Tharala_Resume.pdf" download>Download Resume</a>
+          <button class="btn btn-tour" id="tourBtn" type="button">Take the 2-minute tour</button>
         </div>
       </div>
     </div>
@@ -78,6 +99,50 @@
   </div>
 
   <main>
+    <!-- INTERACTIVE DEMO -->
+    <section id="demo" class="section">
+      <p class="eyebrow">Interactive demo</p>
+      <h2 class="section-title">Ask about my work — watch a RAG pipeline answer</h2>
+      <p class="section-sub">A simulated retrieval pipeline running entirely in your browser. Type a question or try a sample — you'll see retrieve → rerank → generate happen live, over a canned knowledge base drawn from my real experience.</p>
+      <div class="glass demo-card">
+        <div class="demo-input-row">
+          <input id="demoInput" type="text" maxlength="140" placeholder="e.g. How does Pranay evaluate LLM systems?" aria-label="Ask a question about Pranay's work">
+          <button id="demoAsk" class="btn" type="button">Ask</button>
+        </div>
+        <div class="demo-samples" role="group" aria-label="Sample questions">
+          <button class="demo-chip" type="button" data-q="How does Pranay evaluate LLM systems before shipping?">How does he evaluate LLM systems?</button>
+          <button class="demo-chip" type="button" data-q="What RAG experience does Pranay have?">What RAG experience does he have?</button>
+          <button class="demo-chip" type="button" data-q="Has Pranay built agents with tool use?">Has he built agents with tool use?</button>
+        </div>
+        <div class="demo-pipeline" aria-hidden="true">
+          <div class="demo-stage" data-stage="1"><span class="demo-stage-num">1</span><span>Understand query</span></div>
+          <div class="demo-stage-arrow">→</div>
+          <div class="demo-stage" data-stage="2"><span class="demo-stage-num">2</span><span>Retrieve chunks</span></div>
+          <div class="demo-stage-arrow">→</div>
+          <div class="demo-stage" data-stage="3"><span class="demo-stage-num">3</span><span>Rerank</span></div>
+          <div class="demo-stage-arrow">→</div>
+          <div class="demo-stage" data-stage="4"><span class="demo-stage-num">4</span><span>Generate answer</span></div>
+        </div>
+        <div id="demoChunks" class="demo-chunks" aria-live="polite"></div>
+        <div id="demoAnswer" class="demo-answer" aria-live="polite"></div>
+        <p class="demo-note">Simulated demo — canned knowledge base, no backend. It illustrates the retrieve → rerank → generate pipeline I build in production.</p>
+      </div>
+    </section>
+
+    <!-- HOW I EVALUATE -->
+    <section id="evaluate" class="section">
+      <p class="eyebrow">Evaluation</p>
+      <h2 class="section-title">How I evaluate AI</h2>
+      <p class="section-sub">The bar every system has to clear before production — learned shipping AI in regulated finance.</p>
+      <div class="eval-grid">
+        <div class="glass card eval-card"><span class="eval-num">01</span><h3>Groundedness &amp; citations</h3><p>Every generated claim traceable to a retrieved source. No citation, no ship.</p></div>
+        <div class="glass card eval-card"><span class="eval-num">02</span><h3>Latency budgets</h3><p>p50/p95 targets set per use case up front, then measured across providers — not after launch.</p></div>
+        <div class="glass card eval-card"><span class="eval-num">03</span><h3>Cost per query</h3><p>Token economics tracked per query. The numbers feed build-vs-buy decisions.</p></div>
+        <div class="glass card eval-card"><span class="eval-num">04</span><h3>Guardrails</h3><p>PII handling, refusal paths, prompt-injection resistance — tested with adversarial cases, not assumed.</p></div>
+        <div class="glass card eval-card"><span class="eval-num">05</span><h3>Human review</h3><p>Analyst-in-the-loop sampling and production audits. The model proposes; humans decide.</p></div>
+      </div>
+    </section>
+
     <!-- DOMAINS -->
     <section id="about" class="section">
       <h2 class="section-title">Where I deliver</h2>
@@ -165,29 +230,184 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS / CASE STUDIES -->
     <section id="projects" class="section">
-      <h2 class="section-title">Selected projects</h2>
-      <p class="section-sub">Production systems from my recent work in financial services.</p>
-      <div class="card-grid">
-        <div class="glass card project-card">
-          <p class="project-tag">Latest · Production</p>
-          <h3>Fraud-Detection Virtual Assistant</h3>
-          <p>AI-powered decision-support virtual assistant integrated with vector databases to triage high-risk fraud alerts — cutting manual investigation time for analyst teams.</p>
-          <div class="tags"><span>Agentic AI</span><span>Vector Databases</span><span>Decision Support</span><span>LangChain</span></div>
-        </div>
-        <div class="glass card project-card">
-          <p class="project-tag">Latest · Production</p>
-          <h3>Enterprise Document-Intelligence RAG Assistant</h3>
-          <p>Retrieval-augmented Q&amp;A using NLP over fund and account documents (LangChain, Pinecone, FAISS, GCP Vertex AI) — surfacing cited, context-aware answers that cut lookup time for compliance and support teams.</p>
-          <div class="tags"><span>RAG</span><span>LangChain</span><span>Pinecone</span><span>FAISS</span><span>GCP Vertex AI</span></div>
-        </div>
-        <div class="glass card project-card">
-          <p class="project-tag">Latest · Production</p>
-          <h3>Fine-Tuned Financial-Domain LLM</h3>
-          <p>LoRA/QLoRA fine-tuning of open-source LLMs (Llama, Mistral) through iterative training on compliance and transaction datasets — reducing hallucinated responses and improving domain accuracy.</p>
-          <div class="tags"><span>LoRA / QLoRA</span><span>Llama</span><span>Mistral</span><span>Hugging Face</span><span>LLM Evaluation</span></div>
-        </div>
+      <p class="eyebrow">Case studies</p>
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-sub">Production systems from financial services, written up like design docs — problem, constraints, architecture, tradeoffs, results. Expand any case study for the full walkthrough.</p>
+      <div class="case-list">
+
+        <details class="glass card case-study">
+          <summary class="case-summary">
+            <div>
+              <p class="project-tag">Production · American Express</p>
+              <h3>Fraud-Detection Virtual Assistant</h3>
+              <p class="case-lede">Agentic triage of high-risk fraud alerts — the assistant builds the case brief, the analyst makes the call.</p>
+            </div>
+            <span class="case-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="case-body">
+            <div class="case-block">
+              <h4>Problem</h4>
+              <p>Fraud analysts faced a flood of high-risk alerts, each demanding manual investigation across transaction history, customer profile, and prior cases. Reviews were slow, inconsistent, and false positives burned analyst hours that should have gone to real threats.</p>
+            </div>
+            <div class="case-block">
+              <h4>Constraints</h4>
+              <ul>
+                <li>Regulated bank: every assisted decision must be explainable and auditable.</li>
+                <li>The analyst stays the decision-maker — the system must never auto-action a fraud call.</li>
+                <li>Customer PII in scope: strict handling and access controls throughout.</li>
+                <li>Fast enough for a live triage workflow — analysts won't wait on a slow assistant.</li>
+              </ul>
+            </div>
+            <div class="case-block">
+              <h4>Architecture</h4>
+              <svg class="arch" viewBox="0 0 660 130" role="img" aria-label="Fraud assistant pipeline: alert stream, triage agent, vector retrieval, LLM reasoning, analyst review">
+                <defs>
+                  <marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a5b4d4"/></marker>
+                </defs>
+                <g class="arch-node"><rect x="6" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="18" y="55">1</text><text class="arch-label" x="18" y="73">Alert</text><text class="arch-label" x="18" y="88">stream</text></g>
+                <line x1="110" y1="64" x2="132" y2="64" class="arch-arrow" marker-end="url(#arrA)"/>
+                <g class="arch-node"><rect x="132" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="144" y="55">2</text><text class="arch-label" x="144" y="73">Triage</text><text class="arch-label" x="144" y="88">agent</text></g>
+                <line x1="236" y1="64" x2="258" y2="64" class="arch-arrow" marker-end="url(#arrA)"/>
+                <g class="arch-node"><rect x="258" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="270" y="55">3</text><text class="arch-label" x="270" y="73">Vector</text><text class="arch-label" x="270" y="88">retrieval</text></g>
+                <line x1="362" y1="64" x2="384" y2="64" class="arch-arrow" marker-end="url(#arrA)"/>
+                <g class="arch-node"><rect x="384" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="396" y="55">4</text><text class="arch-label" x="396" y="73">LLM</text><text class="arch-label" x="396" y="88">reasoning</text></g>
+                <line x1="488" y1="64" x2="510" y2="64" class="arch-arrow" marker-end="url(#arrA)"/>
+                <g class="arch-node"><rect x="510" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="522" y="55">5</text><text class="arch-label" x="522" y="73">Analyst</text><text class="arch-label" x="522" y="88">review</text></g>
+              </svg>
+            </div>
+            <div class="case-block">
+              <h4>Key decisions &amp; tradeoffs</h4>
+              <ul class="decisions">
+                <li><strong>Agentic triage over pure rules.</strong> Rules are brittle against novel fraud patterns; an agent with tool use adapts — but every agent action runs inside guardrails, and the reasoning trace is logged for audit.</li>
+                <li><strong>Human-in-the-loop by design.</strong> The assistant drafts the case brief; the analyst decides. This cost us full automation, and it was the right call for a regulated bank.</li>
+                <li><strong>Similar-case retrieval.</strong> A vector database of historical cases grounds each brief in precedent instead of letting the model free-associate.</li>
+                <li><strong>Measured provider choice.</strong> LLM providers and vector databases were benchmarked on latency, cost, and accuracy before committing — the platform's build-vs-buy calls came out of those experiments.</li>
+              </ul>
+            </div>
+            <div class="case-block">
+              <h4>Results</h4>
+              <p>Deployed in production at American Express. Alert triage automated end to end, cutting manual investigation time for analyst teams; XGBoost anomaly-detection models with rule-based logic reduced false positives and manual review effort. Decision-support tooling now assists analysts on high-risk transaction reviews and customer risk assessments.</p>
+            </div>
+            <div class="tags"><span>Agentic AI</span><span>Vector Databases</span><span>Decision Support</span><span>LangChain</span><span>Claude</span></div>
+          </div>
+        </details>
+
+        <details class="glass card case-study">
+          <summary class="case-summary">
+            <div>
+              <p class="project-tag">Production · Vanguard</p>
+              <h3>Enterprise Document-Intelligence RAG Assistant</h3>
+              <p class="case-lede">Retrieval-augmented Q&amp;A over fund and account documentation — every answer cited, every claim traceable.</p>
+            </div>
+            <span class="case-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="case-body">
+            <div class="case-block">
+              <h4>Problem</h4>
+              <p>Compliance and support teams spent hours hunting answers across sprawling fund and account documentation. Keyword search missed context, and slow lookups bottlenecked review cycles.</p>
+            </div>
+            <div class="case-block">
+              <h4>Constraints</h4>
+              <ul>
+                <li>Compliance setting: every answer must be cited and traceable to source documents.</li>
+                <li>Legacy documentation in varied formats — ingestion had to be robust, not demo-clean.</li>
+                <li>API-first access: downstream systems needed programmatic access to historical records.</li>
+                <li>SEC/FINRA-adjacent regulatory expectations on the review process.</li>
+              </ul>
+            </div>
+            <div class="case-block">
+              <h4>Architecture</h4>
+              <svg class="arch" viewBox="0 0 660 130" role="img" aria-label="RAG pipeline: documents, chunk and index, hybrid retrieval, rerank, cited answer">
+                <defs>
+                  <marker id="arrB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a5b4d4"/></marker>
+                </defs>
+                <g class="arch-node"><rect x="6" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="18" y="55">1</text><text class="arch-label" x="18" y="73">Documents</text><text class="arch-label" x="18" y="88">ingest</text></g>
+                <line x1="110" y1="64" x2="132" y2="64" class="arch-arrow" marker-end="url(#arrB)"/>
+                <g class="arch-node"><rect x="132" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="144" y="55">2</text><text class="arch-label" x="144" y="73">Chunk &amp;</text><text class="arch-label" x="144" y="88">index</text></g>
+                <line x1="236" y1="64" x2="258" y2="64" class="arch-arrow" marker-end="url(#arrB)"/>
+                <g class="arch-node"><rect x="258" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="270" y="55">3</text><text class="arch-label" x="270" y="73">Hybrid</text><text class="arch-label" x="270" y="88">retrieval</text></g>
+                <line x1="362" y1="64" x2="384" y2="64" class="arch-arrow" marker-end="url(#arrB)"/>
+                <g class="arch-node"><rect x="384" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="396" y="55">4</text><text class="arch-label" x="396" y="73">Rerank</text><text class="arch-label" x="396" y="88">&amp; filter</text></g>
+                <line x1="488" y1="64" x2="510" y2="64" class="arch-arrow" marker-end="url(#arrB)"/>
+                <g class="arch-node"><rect x="510" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="522" y="55">5</text><text class="arch-label" x="522" y="73">Cited</text><text class="arch-label" x="522" y="88">answer</text></g>
+              </svg>
+            </div>
+            <div class="case-block">
+              <h4>Key decisions &amp; tradeoffs</h4>
+              <ul class="decisions">
+                <li><strong>Citations as a hard requirement.</strong> No uncited claims, ever — this ruled out several "helpful but loose" generation strategies and shaped the whole prompt design.</li>
+                <li><strong>Evaluated vector stores before choosing.</strong> Pinecone, FAISS, OpenSearch, and pgvector were compared on latency, cost, and accuracy for our workload instead of defaulting to the familiar option.</li>
+                <li><strong>Chunking tuned, not defaulted.</strong> Chunk size and overlap were engineered around precision/recall on our docs; small chunks won on precision, larger ones on context — the tradeoff is documented per document type.</li>
+                <li><strong>LLM-as-a-judge in the loop.</strong> Automated evals scored faithfulness and relevance on every iteration, so regressions were caught before humans saw them.</li>
+              </ul>
+            </div>
+            <div class="case-block">
+              <h4>Results</h4>
+              <p>Deployed in production at Vanguard. Cited, context-aware answers cut lookup time for compliance and support teams, with API-first access to historical records. A companion pipeline generates 2-page automated summaries of fund disclosures and account statements, cutting manual document-review effort for operations teams.</p>
+            </div>
+            <div class="tags"><span>RAG</span><span>LangChain</span><span>Pinecone</span><span>FAISS</span><span>GCP Vertex AI</span></div>
+          </div>
+        </details>
+
+        <details class="glass card case-study">
+          <summary class="case-summary">
+            <div>
+              <p class="project-tag">Production · Vanguard</p>
+              <h3>Fine-Tuned Financial-Domain LLM</h3>
+              <p class="case-lede">LoRA/QLoRA fine-tuning of open models for compliance-heavy workflows — where prompting alone hit a ceiling.</p>
+            </div>
+            <span class="case-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="case-body">
+            <div class="case-block">
+              <h4>Problem</h4>
+              <p>Base open-source models hallucinated on compliance-heavy financial workflows and missed domain terminology. Prompt engineering improved things but plateaued — the models needed domain knowledge baked in, not bolted on.</p>
+            </div>
+            <div class="case-block">
+              <h4>Constraints</h4>
+              <ul>
+                <li>Limited curated domain data — every training example had to earn its place.</li>
+                <li>Training budget: full fine-tuning of large models was off the table.</li>
+                <li>No regression on general capability — the model still had to handle everything else.</li>
+                <li>Everything through responsible-AI review before production.</li>
+              </ul>
+            </div>
+            <div class="case-block">
+              <h4>Architecture</h4>
+              <svg class="arch" viewBox="0 0 660 130" role="img" aria-label="Fine-tuning pipeline: domain datasets, curation and eval set, LoRA QLoRA training, eval harness, deploy">
+                <defs>
+                  <marker id="arrC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a5b4d4"/></marker>
+                </defs>
+                <g class="arch-node"><rect x="6" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="18" y="55">1</text><text class="arch-label" x="18" y="73">Domain</text><text class="arch-label" x="18" y="88">datasets</text></g>
+                <line x1="110" y1="64" x2="132" y2="64" class="arch-arrow" marker-end="url(#arrC)"/>
+                <g class="arch-node"><rect x="132" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="144" y="55">2</text><text class="arch-label" x="144" y="73">Curation &amp;</text><text class="arch-label" x="144" y="88">eval set</text></g>
+                <line x1="236" y1="64" x2="258" y2="64" class="arch-arrow" marker-end="url(#arrC)"/>
+                <g class="arch-node"><rect x="258" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="270" y="55">3</text><text class="arch-label" x="270" y="73">LoRA / QLoRA</text><text class="arch-label" x="270" y="88">training</text></g>
+                <line x1="362" y1="64" x2="384" y2="64" class="arch-arrow" marker-end="url(#arrC)"/>
+                <g class="arch-node"><rect x="384" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="396" y="55">4</text><text class="arch-label" x="396" y="73">Eval</text><text class="arch-label" x="396" y="88">harness</text></g>
+                <line x1="488" y1="64" x2="510" y2="64" class="arch-arrow" marker-end="url(#arrC)"/>
+                <g class="arch-node"><rect x="510" y="32" width="104" height="64" rx="12"/><text class="arch-num" x="522" y="55">5</text><text class="arch-label" x="522" y="73">Deploy</text><text class="arch-label" x="522" y="88">via API</text></g>
+              </svg>
+            </div>
+            <div class="case-block">
+              <h4>Key decisions &amp; tradeoffs</h4>
+              <ul class="decisions">
+                <li><strong>LoRA/QLoRA over full fine-tuning.</strong> A fraction of the compute, and adapters stay swappable per domain — full fine-tuning would have been slower, pricier, and harder to version.</li>
+                <li><strong>Open models (Llama, Mistral).</strong> Full control over weights and data privacy — non-negotiable for financial data.</li>
+                <li><strong>Eval set before training.</strong> Hallucination probes and compliance-accuracy tests were built first, so "better" was measured rather than felt. Training stopped when the evals said so.</li>
+                <li><strong>Fine-tuning + hybrid prompting, not either/or.</strong> Prompting handled structure and style; the adapter handled domain knowledge. Each did what it was best at.</li>
+              </ul>
+            </div>
+            <div class="case-block">
+              <h4>Results</h4>
+              <p>Shipped through Vanguard's responsible-AI review process. The fine-tuned models measurably reduced hallucinations and improved compliance accuracy across investment and brokerage workflows, where the base models had plateaued.</p>
+            </div>
+            <div class="tags"><span>LoRA / QLoRA</span><span>Llama</span><span>Mistral</span><span>Hugging Face</span><span>LLM Evaluation</span></div>
+          </div>
+        </details>
+
       </div>
     </section>
 
